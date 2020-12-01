@@ -1,2 +1,2 @@
-# mare-nubium-game
+# Mare Nubium
 My github game-off jam entry
