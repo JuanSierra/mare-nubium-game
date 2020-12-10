@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Kubasta';
+    src: url('Kubasta.woff') format('woff'), 
+    url('Kubasta.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-size: 20px;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Kubasta', Arial, serif;
+  }
+
+  button {
+    font-family: 'Kubasta', Arial, serif;
+    padding: 0px 15px 0px 15px;
+    border-width: 1px;
+    margin:1px;
+    font-size: 1.5rem;
+  }
+
+  table{
+    font-size: 2rem;
+  }
+
+  h3{
+    margin-top: 0;
+  }
+
+  button:hover {
+    border-width: 2px;
+    margin:0px;
+  }
+
+  td{
+    padding: 0;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 9px 9px;
+    height: 760px;
+    width:1024px;
+  }
+  .grid-container>div
+  {
+    padding:2px;
+    border:solid 1px black;
+  }
+  .Tech { grid-area: 1 / 1 / 3 / 2; }
+  .Crew { grid-area: 3 / 1 / 4 / 2; }
+  .Countdown { grid-area: 1 / 2 / 2 / 3; }
+  .ShipsLaunch { grid-area: 2 / 2 / 4 / 3; }
+  .Moon-Target { 
+    grid-area: 1 / 3 / 3 / 4;
+    background-image: url("moon.jpg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: center;
+    background-color:black;
+  }
+  .NewsPoliticsEvents { grid-area: 3 / 3 / 5 / 4; }
+  .Moneys { grid-area: 4 / 2 / 6 / 3; }
+  .Facilities { grid-area: 4 / 1 / 6 / 2; }
+
+  .cent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    /*bottom: 100%;*/
+    left: 100%;
+    margin-left: 5px;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

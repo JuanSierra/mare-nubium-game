@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Target : Moon</title>
+  <meta name="description" content="Target:Moon">
+  <meta name="author" content="SitePoint">
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/concrete.css@1.3.0/concrete.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+
+</head>
+
+<body>
+    <div class="cent">
+    <div class="grid-container">
+        <div class="Tech">
+            <h3>Materials/Research</h3>
+            <table>
+                <tr>
+                    <td>Structural</td>
+                    <td>2 tons</td>
+                    <td><button>Buy</button></td>
+                </tr>
+                <tr>
+                    <td style="width: 30%;">Electrical</td>
+                    <td>5 tons</td>
+                    <td style="width: 40%;">
+                        <div class="tooltip">
+                            <button>Buy</button>
+                            <span class="tooltiptext">cost: 5</span>
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thermal</td>
+                    <td>1 tons</td>
+                    <td><button>Buy</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="Crew">
+            <h3>Crew/Training</h3>
+            <table>
+                <tr>
+                    <td>Expert:</td>
+                    <td>2</td>
+                    <td><button>Enroll</button></td>
+                </tr>
+                <tr>
+                    <td style="width: 30%;">Engineer:</td>
+                    <td>5</td>
+                    <td style="width: 40%;">
+                        <div class="tooltip">
+                            <button>Enroll</button>
+                            <span class="tooltiptext">cost: 5</span>
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pilot:</td>
+                    <td>1</td>
+                    <td><button>Enroll</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="Countdown ff">Countdown...</div>
+        <div class="ShipsLaunch">
+            <button>Launch Transport</button>
+        </div>
+        <div class="Moon-Target">Moon - Not a cargo/destination yet</div>
+        <div class="NewsPoliticsEvents">
+            <textarea>News</textarea>
+        </div>
+
+        <div class="Moneys">
+            <button>Invest</button>
+        </div>
+        <div class="Facilities">
+            <h3>Facilities</h3>
+            <table>
+                <tr>
+                    <td>Hangar:</td>
+                    <td>5 kms</td>
+                    <td><button>Expand</button></td>
+                </tr>
+                <tr>
+                    <td style="width: 40%;">Spaceport:</td>
+                    <td>10 kms</td>
+                    <td style="width: 40%;">
+                        <div class="tooltip">
+                            <button>Build</button>
+                            <span class="tooltiptext">cost: 5</span>
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Control Center:</td>
+                    <td></td>
+                    <td><button>Build</button></td>
+                </tr>
+                <tr>
+                    <td>Rocket Lab:</td>
+                    <td></td>
+                    <td><button>Build</button></td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+
+  <!-- <script type="module" src="js/pipeline.js"></script>
+  <script type="module" src="js/scripts.js"></script> -->
+</body>
+</html>
